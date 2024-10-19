@@ -24,8 +24,3 @@ override.tf.json
 
 # If using with terraform enterprise
 terraform.tfstate.d/
-
-
-# Acess keys
-ACCESS_KEY
-SECRET_ACCESS_KEY
