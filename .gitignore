@@ -1,0 +1,26 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude .terraform directory
+.terraform/
+
+# Exclude override files as they are usually used to override resources locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include .tfvars files with sensitive data such as passwords, private keys, and other secrets
+*.tfvars
+*.tfvars.json
+
+# Exclude CLI configuration files
+.terraformrc
+.terraform.rc
+
+# If using with terraform enterprise
+terraform.tfstate.d/
