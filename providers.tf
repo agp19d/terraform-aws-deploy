@@ -11,3 +11,12 @@ provider "aws" {
   region  = "us-east-1"
   profile = "alejandro"
 }
+
+resource "aws_s3_bucket" "s3bucket" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "s3-bucket"
+    Environment = "dev"
+  }
+}
