@@ -10,12 +10,3 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-
-resource "aws_s3_bucket" "s3bucket" {
-  bucket = "my-tf-test-bucket-alejandro"
-
-  tags = {
-    Name        = "s3-bucket"
-    Environment = "dev"
-  }
-}
