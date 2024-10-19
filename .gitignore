@@ -5,6 +5,7 @@
 # Crash log files and other logs
 crash.log
 *.log
+logs/
 
 # Exclude .terraform directory
 .terraform/
