@@ -9,6 +9,7 @@ logs/
 
 # Exclude .terraform directory
 .terraform/
+.terraform/*
 
 # Exclude override files as they are usually used to override resources locally
 override.tf
