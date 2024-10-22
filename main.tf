@@ -48,7 +48,7 @@ resource "aws_security_group" "allow_ssh" {
 
 # Create an EC2 instance
 resource "aws_spot_instance_request" "ec2-instance1" {
-  count = 3
+  count = 3 # Create 3 spot instances
   ami           = "ami-06b21ccaeff8cd686"
   instance_type = "t2.micro"
   spot_price      = "0.03"
@@ -56,7 +56,7 @@ resource "aws_spot_instance_request" "ec2-instance1" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
-    Name = "demo-server1"
+    Name = "demo-server-${count.index + 1}"
     Environment = "dev"
   }
 }

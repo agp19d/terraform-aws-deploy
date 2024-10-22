@@ -28,6 +28,10 @@ override.tf.json
 # If using with terraform enterprise
 terraform.tfstate.d/
 
+# Terraform lock file
+*.tfstate.lock.info
+.terraform.lock.hcl
+
 # Ignore shell script
 *.sh
 
