@@ -47,7 +47,7 @@ resource "aws_security_group" "allow_ssh" {
 }
 
 # Create an EC2 instance
-resource "aws_spot_instance_request" "ec2-instance1" {
+resource "aws_spot_instance_request" "demo-spot-request" {
   count = 3 # Create 3 spot instances
   ami           = "ami-06b21ccaeff8cd686"
   instance_type = "t2.micro"
