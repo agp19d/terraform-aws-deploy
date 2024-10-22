@@ -10,7 +10,6 @@ logs/
 # Exclude .terraform directory
 .terraform/
 .terraform/*
-.terraform.lock.hcl
 
 # Exclude override files as they are usually used to override resources locally
 override.tf
@@ -28,6 +27,10 @@ override.tf.json
 
 # If using with terraform enterprise
 terraform.tfstate.d/
+
+# Terraform lock file
+*.tfstate.lock.info
+.terraform.lock.hcl
 
 # Ignore shell script
 *.sh
