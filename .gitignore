@@ -2,11 +2,15 @@
 *.tfstate
 *.tfstate.*
 
-# Crash log files
+# Crash log files and other logs
 crash.log
+*.log
+logs/
 
 # Exclude .terraform directory
 .terraform/
+.terraform/*
+.terraform.lock.hcl
 
 # Exclude override files as they are usually used to override resources locally
 override.tf
@@ -24,3 +28,12 @@ override.tf.json
 
 # If using with terraform enterprise
 terraform.tfstate.d/
+
+# Ignore shell script
+*.sh
+
+# Ignore pem files
+*.pem
+
+# Ignore temporary files
+*.tmp
